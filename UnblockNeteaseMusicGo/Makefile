@@ -23,7 +23,8 @@ GO_PKG_LDFLAGS_X:= \
 	$(GO_PKG)/version.Version=$(PKG_VERSION)
 
 export GO111MODULE=on
-export GOPROXY=https://mirrors.aliyun.com/goproxy/
+export GOPROXY=https://goproxy.io
+# export GOPROXY=https://mirrors.aliyun.com/goproxy/
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
